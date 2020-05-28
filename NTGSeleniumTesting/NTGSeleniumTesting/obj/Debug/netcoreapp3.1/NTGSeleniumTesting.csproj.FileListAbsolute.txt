@@ -91,3 +91,7 @@ C:\Users\asus\Desktop\NTGSeleniumTesting\NTGSeleniumTesting\NTGSeleniumTesting\o
 C:\Users\asus\Desktop\NTGSeleniumTesting\NTGSeleniumTesting\NTGSeleniumTesting\obj\Debug\netcoreapp3.1\NTGSeleniumTesting.csproj.CopyComplete
 C:\Users\asus\Desktop\NTGSeleniumTesting\NTGSeleniumTesting\NTGSeleniumTesting\obj\Debug\netcoreapp3.1\NTGSeleniumTesting.genruntimeconfig.cache
 C:\Users\asus\Desktop\NTGSeleniumTesting\NTGSeleniumTesting\NTGSeleniumTesting\bin\Debug\netcoreapp3.1\WebDriver.dll
+C:\Users\asus\Desktop\NTGSeleniumTesting\NTGSeleniumTesting\NTGSeleniumTesting\bin\Debug\netcoreapp3.1\NTGSeleniumTesting.pdb
+C:\Users\asus\Desktop\NTGSeleniumTesting\NTGSeleniumTesting\NTGSeleniumTesting\obj\Debug\netcoreapp3.1\NTGSeleniumTesting.csproj.CoreCompileInputs.cache
+C:\Users\asus\Desktop\NTGSeleniumTesting\NTGSeleniumTesting\NTGSeleniumTesting\obj\Debug\netcoreapp3.1\NTGSeleniumTesting.dll
+C:\Users\asus\Desktop\NTGSeleniumTesting\NTGSeleniumTesting\NTGSeleniumTesting\obj\Debug\netcoreapp3.1\NTGSeleniumTesting.pdb
