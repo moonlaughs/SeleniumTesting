@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Html5;
 using System;
 
 namespace NTGSeleniumTesting
@@ -9,13 +10,14 @@ namespace NTGSeleniumTesting
     public class Tests
     {
         IWebDriver driver;
+        //JavaScriptExecutor js;
         [SetUp]
         public void Setup()
         {
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
             driver.Url = "http://localhost:3001/customer-details-page";
-            Console.WriteLine("Opened Page " + driver.Url);
+            Console.WriteLine("Opened Page " + driver.Url); 
         }
 
         //====================================First name=========================================
@@ -79,23 +81,23 @@ namespace NTGSeleniumTesting
         {
             string[] testValues = {"aa", "aaa", "aaaø", "aaa-aaa", "aaa-aaa-aaa", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" };
 
-            foreach (var item in testValues)
-            {
-                driver.FindElement(By.Id("firstName")).SendKeys(item);
-                driver.FindElement(By.Id("lastName")).SendKeys("AAA");
-                driver.FindElement(By.Id("address")).SendKeys("AAA");
-                driver.FindElement(By.Id("postalCode")).SendKeys("4000");
-                driver.FindElement(By.Id("city")).SendKeys("Roskilde");
-                driver.FindElement(By.Id("phoneNumber")).SendKeys("12345678");
-                Console.WriteLine("Entered values");
+             foreach (var item in testValues)
+             {
+                 driver.FindElement(By.Id("firstName")).SendKeys(item);
+                 driver.FindElement(By.Id("lastName")).SendKeys("AAA");
+                 driver.FindElement(By.Id("address")).SendKeys("AAA");
+                 driver.FindElement(By.Id("postalCode")).SendKeys("4000");
+                 driver.FindElement(By.Id("city")).SendKeys("Roskilde");
+                 driver.FindElement(By.Id("phoneNumber")).SendKeys("12345678");
+                 Console.WriteLine("Entered values");
 
-                driver.FindElement(By.Id("confirmButton")).Click();
-                Console.WriteLine("Button clicked");
+                 driver.FindElement(By.Id("confirmButton")).Click();
+                 Console.WriteLine("Button clicked");
 
-                Assert.AreEqual(driver.Url, "http://localhost:3001/delivery-details-page");
-                driver.Url = "http://localhost:3001/customer-details-page";
-                Console.WriteLine("Opened Page " + driver.Url);
-            }
+                 Assert.AreEqual(driver.Url, "http://localhost:3001/delivery-details-page");
+                 driver.Url = "http://localhost:3001/customer-details-page";
+                 Console.WriteLine("Opened Page " + driver.Url);
+             }
 
         }
 
